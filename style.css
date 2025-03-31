@@ -1,0 +1,167 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f1f8fd;
+    margin: 0;
+    padding: 0;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#quiz-container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.choice-button {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 8px 0;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #007bff;
+    background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+    color: #007bff;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 25px;
+}
+
+.choice-button:hover {
+    background: #007bff;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 123, 255, 0.3);
+}
+
+.choice-button:active {
+    background: #0056b3;
+    transform: scale(1);
+}
+
+.choice-button i {
+    font-size: 1.2rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#prevButton,
+#nextButton,
+#calculateButton {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+
+#prevButton {
+    background-color: #6c757d;
+    color: white;
+}
+
+#prevButton:hover {
+    background-color: #5a6268;
+    transform: translateY(-3px);
+}
+
+#nextButton {
+    background-color: #007bff;
+    color: white;
+}
+
+#nextButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+#calculateButton {
+    background-color: #28a745;
+    color: white;
+}
+
+#calculateButton:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+
+.profile-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    font-size: 0.9rem;
+}
+
+span input {
+    border: 2px solid red;
+    border: none;
+    outline: none;
+}
+
+span input:active {
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 480px) {
+    .button-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #prevButton,
+    #nextButton,
+    #calculateButton {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
